@@ -1,38 +1,26 @@
-function myFunction() {
-    console.log("Hello world!");
+function userName(name) {
+    console.log("Hello " + name);
+    
 }
 
-myFunction();
+userName("Waseem")
 
-
-function concatTwoWords(name, fatherName) {
-    console.log(name + " " + fatherName);
+function adWord(word1, word2){
+    console.log(word1+ " " + word2);
 }
 
-concatTwoWords("waseem", "saleem");
+adWord("Waseem", "Saleem")
 
-let fruits = ["Apple", "Banana", "Mango", "Orange"]; 
-
-function printFruits(fruits) {
-    for (let i = 0; i < fruits.length; i++) {
-        console.log(fruits[i]);
-    }
+function multiply(num1, num2){
+    return num1 * num2
 }
 
-printFruits(fruits);
+let res = multiply(5, 9);
+console.log(res);
 
-
-
-let numbers = [10, 15, 22, 31, 40];
-
-function checkNumbers(numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0) {
-            console.log(numbers[i] + " is Even");
-        } else {
-            console.log(numbers[i] + " is Odd");
-        }
-    }
+function calculateSquare(number) {
+    return number * number
 }
 
-checkNumbers(numbers);
+let square = calculateSquare(9);
+console.log(square);
