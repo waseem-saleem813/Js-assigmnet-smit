@@ -1,0 +1,31 @@
+JavaScript Events Assignment
+
+Question 1:
+Create a button and change the paragraph text when the button is clicked.
+
+Question 2:
+Create a button that changes the background color of the page.
+
+Question 3:
+Change the color of a box when the mouse moves over it.
+
+Question 4:
+Change the box color when the mouse comes over it and change it back when the mouse goes out.
+
+Question 5:
+Change the heading text when the mouse comes over it and change it back when the mouse goes out.
+
+Question 6:
+Create a button that increases the number every time it is clicked.
+
+Question 7:
+Increase the image size when the mouse moves over it and make it smaller when the mouse goes out.
+
+Question 8:
+Create a button that hides and shows a paragraph when clicked.
+
+Question 9:
+Create a box that becomes blue on mouse over, black on mouse out, and red when clicked.
+
+Question 10:
+Create an input field and button that displays a greeting using the entered name.

@@ -3,10 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event assignment</title>
 </head>
 <body>
-    
-    <script src="app.js"></script>
+
+    <!-- Question 1 -->
+    <h2>1. Button Click</h2>
+    <button onclick="changeText()">Click Me</button>
+    <p id="text">Hello</p>
+    <hr>
+
+    <!-- Question 2 -->
+    <h2>2. Background Color</h2>
+    <button onclick="changeBackground()">Change Background</button>
+    <hr>
+
+    <!-- Question 3 -->
+    <h2>3. Mouse Over</h2>
+    <div id="box1"
+         onmouseover="mouseOver1()"
+         style="width:200px; height:100px; background-color:gray;">
+    </div>
+    <hr>
+
+    <!-- Question 4 -->
+    <h2>4. Mouse Over and Mouse Out</h2>
+    <div id="box2"
+         onmouseover="mouseOver2()"
+         onmouseout="mouseOut2()"
+         style="width:200px; height:100px; background-color:red;">
+    </div>
+
+    <hr>
+
+    <!-- Question 5 -->
+    <h2 id="heading"
+        onmouseover="changeHeading()"
+        onmouseout="backHeading()">
+        Hover Me
+    </h2>
+
+    <hr>
+
+    <!-- Question 6 -->
+    <h2>6. Click Counter</h2>
+    <button onclick="counter()">Click</button>
+    <h2 id="number">0</h2>
+
+    <hr>
+
+    <!-- Question 7 -->
+    <h2>7. Image Hover</h2>
+    <img id="myImage"
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiKZhT1NMv2oXCv1VOYJnuN_7MZ8CfknCHj_FCQ_esDOYZqgrwsy9Hrgy&s=10"
+         width="200"
+         onmouseover="bigImage()"
+         onmouseout="smallImage()">
+
+    <hr>
+
+    <!-- Question 8 -->
+    <h2>8. Show and Hide</h2>
+    <button onclick="showHide()">Show / Hide</button>
+    <p id="para">This is my paragraph.</p>
+
+    <hr>
+
+    <!-- Question 9 -->
+    <h2>9. Color Box</h2>
+    <div id="box3"
+         onclick="redColor()"
+         onmouseover="blueColor()"
+         onmouseout="blackColor()"
+         style="width:150px; height:150px; background-color:black;">
+    </div>
+
+    <hr>
+
+    <!-- Question 10 -->
+    <h2>10. Greeting</h2>
+    <input type="text" id="name">
+    <button onclick="greeting()">Click</button>
+    <h2 id="message"></h2>
+
+    <script>
+
+        // Question 1
+        function changeText() {
+            document.getElementById("text").innerHTML = "Hello World";
+        }
+
+
+        // Question 2
+        function changeBackground() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+
+        // Question 3
+        function mouseOver1() {
+            document.getElementById("box1").style.backgroundColor = "yellow";
+        }
+
+
+        // Question 4
+        function mouseOver2() {
+            document.getElementById("box2").style.backgroundColor = "green";
+        }
+
+        function mouseOut2() {
+            document.getElementById("box2").style.backgroundColor = "red";
+        }
+
+
+        // Question 5
+        function changeHeading() {
+            document.getElementById("heading").innerHTML = "Welcome!";
+        }
+
+        function backHeading() {
+            document.getElementById("heading").innerHTML = "Hover Me";
+        }
+
+
+        // Question 6
+        let count = 0;
+
+        function counter() {
+            count = count + 1;
+            document.getElementById("number").innerHTML = count;
+        }
+
+
+        // Question 7
+        function bigImage() {
+            document.getElementById("myImage").style.width = "300px";
+        }
+
+        function smallImage() {
+            document.getElementById("myImage").style.width = "200px";
+        }
+
+
+        // Question 8
+        function showHide() {
+            let paragraph = document.getElementById("para");
+
+            if (paragraph.style.display == "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+
+
+        // Question 9
+        function blueColor() {
+            document.getElementById("box3").style.backgroundColor = "blue";
+        }
+
+        function blackColor() {
+            document.getElementById("box3").style.backgroundColor = "black";
+        }
+
+        function redColor() {
+            document.getElementById("box3").style.backgroundColor = "red";
+        }
+
+
+        // Question 10
+        function greeting() {
+            let name = document.getElementById("name").value;
+
+            document.getElementById("message").innerHTML = "Hello " + name;
+        }
+
+    </script>
+
 </body>
 </html>
