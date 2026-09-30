@@ -1,59 +1,34 @@
-// function assigment 
+function buyNow() {
+    let message = document.getElementById("productDescription");
+    message.innerText = "Thank you for buying this product!";
+}
 
-// function userName(name) {
-//     console.log("Hello " + name);
-    
-// }
+function changeProduct() {
+    let image = document.getElementById("productImage");
+    image.src = "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500";
+}
 
-// userName("Waseem")
+function changeImage() {
+    let image = document.getElementById("productImage");
+    image.src ="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=500";
+}
 
-// function adWord(word1, word2){
-//     console.log(word1+ " " + word2);
-// }
+function originalImage() {
+    let image = document.getElementById("productImage");
+    image.src = "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500";
+}
 
-// adWord("Waseem", "Saleem")
+function showWelcome() {
+    let name = document.getElementById("userName").value;
+    let welcome = document.getElementById("welcomeMessage");
+    welcome.innerText = `Welcome, ${name}!`;
+}
 
-// function multiply(num1, num2){
-//     return num1 * num2
-// }
-
-// let res = multiply(5, 9);
-// console.log(res);
-
-// function calculateSquare(number) {
-//     return number * number
-// }
-
-// let square = calculateSquare(9);
-// console.log(square);
-
-
-// Do while assigment 
-
-// function doWhile(number){
-//     let i = 10;
-//     do {
-//         console.log(i);
-//         i++
-//     } while (i <= number)
-// }
-
-// doWhile(15)
-
-
-// let i = 1;
-
-// do {
-//     if (i % 2 !== 0){
-//         console.log(i);
-//     }
-//     i++
-// } while(i <= 20);
-
-// let studentsName = ["hassan", "sumair", "waseem", "haseeb", "hamza"];
-// let j = 0;
-
-// do {
-//     console.log(studentsName[j]);
-//     j++;
-// } while (j < studentsName.length)
+function changeDetails() {
+    let name = document.getElementById("productName");
+    let price = document.getElementById("productPrice");
+    let description = document.getElementById("productDescription");
+    name.innerText = "Adidas Sneakers";
+    price.innerText = "1500";
+    description.innerText = "Premium sneakers with a comfortable and modern design.";
+}
