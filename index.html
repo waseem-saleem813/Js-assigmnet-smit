@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <img
-        id="productImage"
-        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
-        alt="Product"
-        onmouseover="changeImage()"
-        onmouseout="originalImage()"
-      />    
+    <!-- Image 1 -->
+    <img id="img1" src="https://picsum.photos/id/10/200/150" width="200">
+    <button onclick="swapPic('img1', 'https://picsum.photos/id/20/200/150')">
+        Button 1
+    </button>
 
-      <h2 id="productName">Nike Shoes</h2>
-      <p id="productDescription">
-        Comfortable and stylish shoes for everyday use.
-      </p>
-      <h3 id="productPrice">1200</h3>
-      <button onclick="buyNow()">Buy Now</button>
-      <button onclick="changeProduct()">Change Product</button>
-      <hr />
-      <input type="text" id="userName" placeholder="Enter your name" />
-      <button onclick="showWelcome()">Welcome</button>
-      <p id="welcomeMessage"></p>
-      <hr />
-      <button onclick="changeDetails()">Change Product Details</button>
-    </div>
+    <br><br>
+    <!-- Image 2 -->
+    <img id="img2" src="https://picsum.photos/id/30/200/150" width="200">
+    <button onclick="swapPic('img2', 'https://picsum.photos/id/40/200/150')">
+        Button 2
+    </button>
+    <br><br>
+    <!-- Image 3 -->
+    <img id="img3" src="https://picsum.photos/id/50/200/150" width="200">
+    <button onclick="swapPic('img3', 'https://picsum.photos/id/60/200/150')">
+        Button 3
+    </button>
 
-    <script src="app.js"></script>
+    
+    <script>
+        function swapPic(imageId, newImage) {
+            document.getElementById(imageId).src = newImage;
+        }
+    </script>
   </body>
 </html>
