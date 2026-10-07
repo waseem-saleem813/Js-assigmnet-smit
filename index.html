@@ -1,36 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Card</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Image 1 -->
-    <img id="img1" src="https://picsum.photos/id/10/200/150" width="200">
-    <button onclick="swapPic('img1', 'https://picsum.photos/id/20/200/150')">
-        Button 1
-    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div id="box">
+        <h1>The Beauty of Nature</h1>
+        <p>Nature is one of the greatest gifts in our lives. The green trees, colorful flowers, flowing rivers, and fresh air make the world beautiful and peaceful. Spending time in nature can reduce stress and refresh our minds. We should protect our environment by planting trees, avoiding pollution, and keeping our surroundings clean. By caring for nature, we can make the Earth a healthier and happier place for everyone.</p>
+    </div>
+    <button onclick="showBox()">Click me</button> <br> <br>
 
-    <br><br>
-    <!-- Image 2 -->
-    <img id="img2" src="https://picsum.photos/id/30/200/150" width="200">
-    <button onclick="swapPic('img2', 'https://picsum.photos/id/40/200/150')">
-        Button 2
-    </button>
-    <br><br>
-    <!-- Image 3 -->
-    <img id="img3" src="https://picsum.photos/id/50/200/150" width="200">
-    <button onclick="swapPic('img3', 'https://picsum.photos/id/60/200/150')">
-        Button 3
-    </button>
-
+    <img src="images/sun.jpg" alt="Sun" class="sun" id="sun" onmouseover="overIn()"  onmouseout="overOut()">
     
-    <script>
-        function swapPic(imageId, newImage) {
-            document.getElementById(imageId).src = newImage;
-        }
-    </script>
-  </body>
+    <script src="app.js"></script>
+</body>
 </html>
